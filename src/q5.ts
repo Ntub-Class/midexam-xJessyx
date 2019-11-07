@@ -4,11 +4,25 @@
 // 輸入說明: 輸入長度為3，開頭不為0的字串，轉換數字請自行處理
 // 輸出說明: 請直接console.log出是否合法
 
+
+
 let checkId = function (id: string) {
+let i =0
+    console.log(id.charAt(0))
+    
+    if (id.charAt(i)===key) {
+        id.charAt(0)*10
+        i++
+    }
+    else
+    {
+
+
+    }
+  //  console.log((str.charAt(0)*10+str.charAt(1)*9+str.charAt(2)*8)MOD 5)
 
 }
-
-checkId('425') // 不合法
-checkId('355') // 合法
-checkId('754') // 不合法
-checkId('100') // 合法
+let checkId1 =  checkId('425');// 不合法
+let checkId2 =  checkId('355');// 合法
+let checkId3 =  checkId('754');// 不合法
+let checkId4 =  checkId('100');// 合法

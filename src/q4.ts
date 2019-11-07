@@ -6,10 +6,15 @@
 
 
 let calc = function (calcString: string) {
+   // var splitted = calcString.split(" ",); 
+    parseInt(calcString)
+    
+     console.log(calcString+"="+calcString)
+    // console.log()
 
 }
 
-calc('8*2')
-calc('1+1')
-calc('5/5')
-calc('9-1')
+let calc1 =  calc('8*2');
+let calc2 =  calc('1+1');
+let calc3 =  calc('5/5');
+let calc4 =  calc('9-1');

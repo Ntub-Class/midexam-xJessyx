@@ -3,10 +3,23 @@
 // 參數說明: content: 文章, keyword: 想要計算出現在文章內的字
 // 輸出說明: 請回傳出現次數
 
+
 let calcWord = function (content: string, keyword: string) {
+let i=-1
+let count=-1
+    
+    do {
+        i = content.indexOf (keyword,i+1)
+        
+        count++
 
+    } while (i!=-1);
+    
+    console.log(count)
 }
-
-console.log(calcWord('Abcdaaeafga', 'a')) // 4
-console.log(calcWord('Today is a good day!', 'o')) // 3
-console.log(calcWord('typescript and javascript', 's')) // 2
+let calcWord1 = calcWord ('Abcdaaeafga','a');
+let calcWord2 = calcWord ('Today is a good day!','o');
+let calcWord3 = calcWord ('typescript and javascript','s');
+//console.log(calcWord('Abcdaaeafga', 'a'))} // 4
+// console.log(calcWord('Today is a good day!', 'o')) // 3
+// console.log(calcWord('typescript and javascript', 's')) // 2
